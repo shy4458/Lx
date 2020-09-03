@@ -1,4 +1,4 @@
-package com.shy.lunbotu.myView.tpbz;
+package com.shy.lunbotu.myView.tchhms;
 
 import android.os.Bundle;
 
@@ -7,13 +7,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.shy.lunbotu.R;
 
-//图片粒子爆炸效果
-public class TpbzActivity extends AppCompatActivity {
+//图层混合模式
+public class TchhmsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tpbz);
+        setContentView(R.layout.activity_tchhms);
 
     }
 }

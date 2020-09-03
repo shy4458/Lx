@@ -17,23 +17,51 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <Button
+        android:id="@+id/jb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="paint渐变"
+        app:layout_constraintStart_toEndOf="@+id/lbt"
+        app:layout_constraintTop_toTopOf="@+id/lbt" />
+
     <Button
         android:id="@+id/myview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="myview"
-        app:layout_constraintStart_toStartOf="@+id/lbt"
-        app:layout_constraintTop_toBottomOf="@+id/lbt" />
+        android:layout_marginStart="32dp"
+        android:text="离屏绘制"
+        app:layout_constraintStart_toEndOf="@+id/jb"
+        app:layout_constraintTop_toTopOf="@+id/jb" />
 
     <Button
         android:id="@+id/tpbz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:text="图片爆炸"
         app:layout_constraintStart_toStartOf="@+id/myview"
         app:layout_constraintTop_toBottomOf="@+id/myview" />
+
+    <Button
+        android:id="@+id/ggk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="刮刮卡"
+        app:layout_constraintStart_toStartOf="@+id/jb"
+        app:layout_constraintTop_toBottomOf="@+id/jb" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="@+id/lbt"
+        app:layout_constraintTop_toBottomOf="@+id/lbt" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,8 +18,11 @@
         </activity>
 
         <activity android:name=".lunbotu.LunBoTuActivity"/>
-        <activity android:name=".myView.MyViewActivity"/>
+        <activity android:name=".myView.pintOrCanvas.paint.MyViewActivity"/>
         <activity android:name=".myView.tpbz.TpbzActivity"/>
+        <activity android:name=".myView.ggk.GgkActivity"/>
+        <activity android:name=".myView.pintOrCanvas.jb.JbACtivity"/>
+        <activity android:name=".myView.pintOrCanvas.lphz.LphzActivity"/>
     </application>
 
 </manifest>

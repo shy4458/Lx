@@ -3,24 +3,11 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<!--    <com.shy.lunbotu.myView.MyView-->
+<!--    <com.shy.lunbotu.myView.pintOrCanvas.paint.ClerREDView-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"/>-->
 
-<!--    <com.shy.lunbotu.myView.myFermodeView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"/>-->
-
-
-<!--    <com.shy.lunbotu.myView.MyGGKView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"/>-->
-
-<!--    <com.shy.lunbotu.myView.ClerREDActivity-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"/>-->
-
-    <com.shy.lunbotu.myView.TransfromView
+    <com.shy.lunbotu.myView.pintOrCanvas.paint.TransfromView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 </LinearLayout>

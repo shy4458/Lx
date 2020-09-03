@@ -1,4 +1,4 @@
-package com.shy.lunbotu.myView;
+package com.shy.lunbotu.myView.pintOrCanvas.lphz;
 
 import android.content.Context;
 import android.graphics.Bitmap;

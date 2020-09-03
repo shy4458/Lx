@@ -1,18 +1,13 @@
-package com.shy.lunbotu.myView;
+package com.shy.lunbotu.myView.pintOrCanvas.paint;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
 
 import androidx.annotation.Nullable;
-
-import com.shy.lunbotu.R;
 
 //canvas相关
 public class TransfromView extends View {

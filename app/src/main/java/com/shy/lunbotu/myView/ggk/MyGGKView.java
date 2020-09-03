@@ -1,4 +1,4 @@
-package com.shy.lunbotu.myView;
+package com.shy.lunbotu.myView.ggk;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -94,18 +94,20 @@ public class MyGGKView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+        //底层结果的绘制
         canvas.drawBitmap(mTxtBmp, 0, 0, paint);
+        //离屏绘制 先绘制到bitmap上 在绘制到图层canvas上
         int layer = canvas.saveLayer(0, 0, getWidth(), getHeight(), paint, Canvas.ALL_SAVE_FLAG);
+        //将路径绘制到bitmap上
         Canvas dstCanvas = new Canvas(mDstBmp);
         dstCanvas.drawPath(mPath, paint);
-
-
+        //将bitmap绘制到canvas上
         canvas.drawBitmap(mDstBmp, 0, 0, paint);
-
+        //设置图层混合模式，触摸的区域为交集，清掉像素
         paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_OUT));
-
+        //绘制原图像
         canvas.drawBitmap(mSrcBmp, 0, 0, paint);
-
+        //取消
         paint.setXfermode(null);
 
         canvas.restoreToCount(layer);
@@ -132,6 +134,7 @@ public class MyGGKView extends View {
                 y = event.getY();
                 break;
         }
+        //触摸调用invalidate（），invalidate（）会出发onDraw方法的调用
         invalidate();
         return true;
     }

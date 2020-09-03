@@ -1,4 +1,4 @@
-package com.shy.lunbotu.myView;
+package com.shy.lunbotu.myView.pintOrCanvas.paint;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -13,25 +13,25 @@ import androidx.annotation.Nullable;
 
 import com.shy.lunbotu.R;
 
-public class ClerREDActivity extends View {
-
+//滤镜
+class ClerREDView extends View {
 
     private Paint paint;
     private Bitmap bitmap;
 
-    public ClerREDActivity(Context context) {
+    public ClerREDView(Context context) {
         this(context,null);
     }
 
-    public ClerREDActivity(Context context, @Nullable AttributeSet attrs) {
+    public ClerREDView(Context context, @Nullable AttributeSet attrs) {
         this(context,attrs,0);
     }
 
-    public ClerREDActivity(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public ClerREDView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         this(context, attrs, defStyleAttr,0);
     }
 
-    public ClerREDActivity(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public ClerREDView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         init();
     }

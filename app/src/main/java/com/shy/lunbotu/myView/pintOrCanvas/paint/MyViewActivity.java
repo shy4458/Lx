@@ -1,4 +1,4 @@
-package com.shy.lunbotu.myView;
+package com.shy.lunbotu.myView.pintOrCanvas.paint;
 
 import android.os.Bundle;
 

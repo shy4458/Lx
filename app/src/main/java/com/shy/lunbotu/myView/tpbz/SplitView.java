@@ -48,9 +48,6 @@ public class SplitView extends View {
         balls = new ArrayList<>();
         mPaint = new Paint();
         mBitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.timg);
-        Log.d("////////宽：",mBitmap.getWidth() + "");
-        Log.d("////////高",mBitmap.getHeight() + "");
-
         for (int i = 0; i < mBitmap.getWidth(); i++) {
             for (int j = 0; j < mBitmap.getHeight(); j++) {
                 Ball ball = new Ball();
@@ -69,8 +66,6 @@ public class SplitView extends View {
                 balls.add(ball);
             }
         }
-        Log.d("////////",balls.size() + "");
-
         mAnimator = ValueAnimator.ofFloat(0, 1);
         mAnimator.setRepeatCount(-1);
         mAnimator.setDuration(2000);
@@ -84,7 +79,6 @@ public class SplitView extends View {
 
             }
         });
-
     }
 
     private int rangInt(int i, int j) {
