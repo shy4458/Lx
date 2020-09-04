@@ -23,6 +23,9 @@
         <activity android:name=".myView.ggk.GgkActivity"/>
         <activity android:name=".myView.pintOrCanvas.jb.JbACtivity"/>
         <activity android:name=".myView.pintOrCanvas.lphz.LphzActivity"/>
+        <activity android:name=".load.SplashActivity"/>
+        <activity android:name=".path.PathActivity"/>
+        <activity android:name=".path.PathMeasureActivity"/>
     </application>
 
 </manifest>

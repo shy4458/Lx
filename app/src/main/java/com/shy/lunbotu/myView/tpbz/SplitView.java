@@ -51,6 +51,7 @@ public class SplitView extends View {
         for (int i = 0; i < mBitmap.getWidth(); i++) {
             for (int j = 0; j < mBitmap.getHeight(); j++) {
                 Ball ball = new Ball();
+                //.getPixel() 是获取当前位置的像素点的颜色值
                 ball.color = mBitmap.getPixel(i, j);
                 ball.x = i * d + d / 2;
                 ball.y = j * d + d / 2;
@@ -73,7 +74,6 @@ public class SplitView extends View {
         mAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
-
                 updateBall();
                 invalidate(); // 会触发onDraw方法
 

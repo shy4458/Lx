@@ -63,5 +63,30 @@
         app:layout_constraintStart_toStartOf="@+id/lbt"
         app:layout_constraintTop_toBottomOf="@+id/lbt" />
 
+    <Button
+        android:id="@+id/splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="splash"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/pathtest1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="path"
+        app:layout_constraintStart_toStartOf="@+id/ggk"
+        app:layout_constraintTop_toTopOf="@+id/splash" />
+
+    <Button
+        android:id="@+id/pathmeas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PathMeasure"
+        app:layout_constraintStart_toStartOf="@+id/tpbz"
+        app:layout_constraintTop_toTopOf="@+id/pathtest1" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
