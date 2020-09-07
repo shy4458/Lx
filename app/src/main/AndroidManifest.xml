@@ -26,6 +26,10 @@
         <activity android:name=".load.SplashActivity"/>
         <activity android:name=".path.PathActivity"/>
         <activity android:name=".path.PathMeasureActivity"/>
+        <activity android:name=".pmsp.PmspActivity"/>
+        <activity android:name=".pmsp.BfbspAvtivity"/>
+        <activity android:name=".pmsp.BaseActivity"/>
+        <activity android:name=".pmsp.DensityActivity"/>
     </application>
 
 </manifest>

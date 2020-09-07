@@ -88,5 +88,30 @@
         app:layout_constraintStart_toStartOf="@+id/tpbz"
         app:layout_constraintTop_toTopOf="@+id/pathtest1" />
 
+    <Button
+        android:id="@+id/pmsp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="像素适配"
+        app:layout_constraintStart_toStartOf="@+id/splash"
+        app:layout_constraintTop_toBottomOf="@+id/splash" />
+
+    <Button
+        android:id="@+id/bfbsp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="百分比适配"
+        app:layout_constraintStart_toStartOf="@+id/pathtest1"
+        app:layout_constraintTop_toTopOf="@+id/pmsp" />
+
+    <Button
+        android:id="@+id/density"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Density适配"
+        app:layout_constraintStart_toStartOf="@+id/pathmeas"
+        app:layout_constraintTop_toTopOf="@+id/bfbsp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

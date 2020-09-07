@@ -15,6 +15,9 @@ import com.shy.lunbotu.myView.pintOrCanvas.paint.MyViewActivity;
 import com.shy.lunbotu.myView.tpbz.TpbzActivity;
 import com.shy.lunbotu.path.PathActivity;
 import com.shy.lunbotu.path.PathMeasureActivity;
+import com.shy.lunbotu.pmsp.BfbspAvtivity;
+import com.shy.lunbotu.pmsp.DensityActivity;
+import com.shy.lunbotu.pmsp.PmspActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -31,6 +34,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         View viewById4 = findViewById(R.id.splash);
         View viewById5 = findViewById(R.id.pathtest1);
         View viewById6 = findViewById(R.id.pathmeas);
+        View viewById7 = findViewById(R.id.pmsp);
+        View viewById8 = findViewById(R.id.bfbsp);
+        View viewById9 = findViewById(R.id.density);
 
         lbt.setOnClickListener(this);
         myview.setOnClickListener(this);
@@ -41,6 +47,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         viewById4.setOnClickListener(this);
         viewById5.setOnClickListener(this);
         viewById6.setOnClickListener(this);
+        viewById7.setOnClickListener(this);
+        viewById8.setOnClickListener(this);
+        viewById9.setOnClickListener(this);
     }
 
     @Override
@@ -73,6 +82,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.pathmeas:
                 startActivity(new Intent(MainActivity.this, PathMeasureActivity.class));
+                break;
+            case R.id.pmsp:
+                startActivity(new Intent(MainActivity.this, PmspActivity.class));
+                break;
+            case R.id.bfbsp:
+                startActivity(new Intent(MainActivity.this, BfbspAvtivity.class));
+                break;
+            case R.id.density:
+                startActivity(new Intent(MainActivity.this, DensityActivity.class));
                 break;
                 default:
         }
