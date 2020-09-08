@@ -17,6 +17,7 @@ import com.shy.lunbotu.path.PathActivity;
 import com.shy.lunbotu.path.PathMeasureActivity;
 import com.shy.lunbotu.pmsp.BfbspAvtivity;
 import com.shy.lunbotu.pmsp.DensityActivity;
+import com.shy.lunbotu.pmsp.LhpspActivity;
 import com.shy.lunbotu.pmsp.PmspActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         View viewById7 = findViewById(R.id.pmsp);
         View viewById8 = findViewById(R.id.bfbsp);
         View viewById9 = findViewById(R.id.density);
+        View viewById10 = findViewById(R.id.lhp);
 
         lbt.setOnClickListener(this);
         myview.setOnClickListener(this);
@@ -50,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         viewById7.setOnClickListener(this);
         viewById8.setOnClickListener(this);
         viewById9.setOnClickListener(this);
+        viewById10.setOnClickListener(this);
     }
 
     @Override
@@ -91,6 +94,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.density:
                 startActivity(new Intent(MainActivity.this, DensityActivity.class));
+                break;
+            case R.id.lhp:
+                startActivity(new Intent(MainActivity.this, LhpspActivity.class));
                 break;
                 default:
         }
