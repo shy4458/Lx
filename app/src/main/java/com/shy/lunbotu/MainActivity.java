@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.shy.lunbotu.load.SplashActivity;
 import com.shy.lunbotu.lunbotu.LunBoTuActivity;
+import com.shy.lunbotu.materialDesign.MaterialDesignActivity;
 import com.shy.lunbotu.myView.ggk.GgkActivity;
 import com.shy.lunbotu.myView.pintOrCanvas.jb.JbACtivity;
 import com.shy.lunbotu.myView.pintOrCanvas.lphz.LphzActivity;
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         View viewById8 = findViewById(R.id.bfbsp);
         View viewById9 = findViewById(R.id.density);
         View viewById10 = findViewById(R.id.lhp);
+        View viewById11 = findViewById(R.id.MusicPlayer);
 
         lbt.setOnClickListener(this);
         myview.setOnClickListener(this);
@@ -53,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         viewById8.setOnClickListener(this);
         viewById9.setOnClickListener(this);
         viewById10.setOnClickListener(this);
+        viewById11.setOnClickListener(this);
     }
 
     @Override
@@ -97,6 +100,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.lhp:
                 startActivity(new Intent(MainActivity.this, LhpspActivity.class));
+                break;
+            case R.id.MusicPlayer:
+                startActivity(new Intent(MainActivity.this, MaterialDesignActivity.class));
                 break;
                 default:
         }

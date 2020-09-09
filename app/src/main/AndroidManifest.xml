@@ -31,6 +31,7 @@
         <activity android:name=".pmsp.BaseActivity"/>
         <activity android:name=".pmsp.DensityActivity"/>
         <activity android:name=".pmsp.LhpspActivity"/>
+        <activity android:name=".materialDesign.MaterialDesignActivity"/>
     </application>
 
 </manifest>
