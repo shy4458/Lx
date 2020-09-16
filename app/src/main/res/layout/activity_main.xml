@@ -130,5 +130,22 @@
         app:layout_constraintStart_toStartOf="@+id/bfbsp"
         app:layout_constraintTop_toTopOf="@+id/lhp" />
 
+    <Button
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="沉浸式、CardView"
+        app:layout_constraintStart_toStartOf="@+id/density"
+        app:layout_constraintTop_toTopOf="@+id/MusicPlayer" />
+
+    <Button
+        android:id="@+id/car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="小车转圈"
+        app:layout_constraintStart_toStartOf="@+id/lhp"
+        app:layout_constraintTop_toBottomOf="@+id/lhp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

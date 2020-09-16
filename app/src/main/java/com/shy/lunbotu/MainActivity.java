@@ -6,9 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.shy.lunbotu.cjsCardView.CardViewActivity;
 import com.shy.lunbotu.load.SplashActivity;
 import com.shy.lunbotu.lunbotu.LunBoTuActivity;
 import com.shy.lunbotu.materialDesign.MaterialDesignActivity;
+import com.shy.lunbotu.myView.carView.CarActivity;
 import com.shy.lunbotu.myView.ggk.GgkActivity;
 import com.shy.lunbotu.myView.pintOrCanvas.jb.JbACtivity;
 import com.shy.lunbotu.myView.pintOrCanvas.lphz.LphzActivity;
@@ -41,6 +43,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         View viewById9 = findViewById(R.id.density);
         View viewById10 = findViewById(R.id.lhp);
         View viewById11 = findViewById(R.id.MusicPlayer);
+        View viewById12 = findViewById(R.id.cardView);
+        View viewById13 = findViewById(R.id.car);
 
         lbt.setOnClickListener(this);
         myview.setOnClickListener(this);
@@ -56,6 +60,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         viewById9.setOnClickListener(this);
         viewById10.setOnClickListener(this);
         viewById11.setOnClickListener(this);
+        viewById12.setOnClickListener(this);
+        viewById13.setOnClickListener(this);
     }
 
     @Override
@@ -103,6 +109,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.MusicPlayer:
                 startActivity(new Intent(MainActivity.this, MaterialDesignActivity.class));
+                break;
+            case R.id.cardView:
+                startActivity(new Intent(MainActivity.this, CardViewActivity.class));
+                break;
+            case R.id.car:
+//                startActivity(new Intent(MainActivity.this, CarActivity.class));
                 break;
                 default:
         }

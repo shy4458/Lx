@@ -3,7 +3,6 @@ package com.shy.lunbotu.materialDesign;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -59,16 +58,17 @@ public class MaterialDesignActivity extends AppCompatActivity {
                 super.onScrolled(recyclerView, dx, dy);
                 //对悬浮条的位置进行调整
                 //找到下个itemVIew
-                View view = linearLayoutManager.findViewByPosition(mCurrentPosition + 1);   //返回整个列表中对应为的view
+                // 0 + 1 = 1 返回第2个item
+                View view = linearLayoutManager.findViewByPosition(mCurrentPosition + 1);   //返回整个列表中对应为的itemview
                 if (view != null) {
                     if (view.getTop() <= heigth) {
                         //下一个view距离顶部小于悬浮条的高度
                         /**
                          * 当下一个头部移动到现有的头部时，就把布局中的头部对着移动的距离向上移动，（显示出把头部顶上去的效果），
-                         *
                          */
-                        Log.d("///////", heigth - view.getTop() + "");
+                        Log.d("///////", mCurrentPosition + "");
                         relativeLayout.setY(-(heigth - view.getTop()));
+                        //setY设置视图的可视位置 相当于平移画布的操作
                     } else {
                         /**
                          * 回到原有的位置
@@ -77,7 +77,8 @@ public class MaterialDesignActivity extends AppCompatActivity {
                     }
                 }
                 /**
-                 * 当前的位置不是第一个可见的位置
+                 * .findFirstVisibleItemPosition() 当列表滑动时，当顶部每滑过一个item边界时，都会返回一个数值 返回第一个可见的位置的item索引
+                 *  如果不是就设置第一个
                  */
                 if (linearLayoutManager.findFirstVisibleItemPosition() != mCurrentPosition) {
                     mCurrentPosition = linearLayoutManager.findFirstVisibleItemPosition();

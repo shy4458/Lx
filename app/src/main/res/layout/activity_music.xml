@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
-        <!-- layout_behavior 滑动标识 线上滑动隐藏 向下滑动立刻显示-->
+        <!-- layout_behavior 滑动标识 向上滑动隐藏 向下滑动立刻显示-->
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv"
@@ -40,7 +40,7 @@
             android:background="#FFF">
 
 
-<!--            添加item的滑动 监听recyclerView的滑动调整头部 打到悬浮效果-->
+            <!--            添加item的滑动 监听recyclerView的滑动调整头部 打到悬浮效果-->
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/iv_avater"
                 android:layout_width="44dp"
@@ -68,8 +68,21 @@
 
         </RelativeLayout>
 
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+                    android:background="#FF0000"
+                    app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"/>
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_gravity="bottom|right"-->
+<!--            android:layout_margin="16dp"-->
+<!--            app:layout_behavior="com.shy.lunbotu.materialDesign.ScaleBehavior" />-->
+
 
     </FrameLayout>
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
