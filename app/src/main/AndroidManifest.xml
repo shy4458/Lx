@@ -34,6 +34,8 @@
         <activity android:name=".materialDesign.MaterialDesignActivity"/>
         <activity android:name=".cjsCardView.CardViewActivity"/>
         <activity android:name=".myView.carView.CarActivity"/>
+        <activity android:name=".hook.HookActivity"/>
+        <activity android:name=".hook.HookActivity1"/>
     </application>
 
 </manifest>

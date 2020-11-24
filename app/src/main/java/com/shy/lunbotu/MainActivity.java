@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.shy.lunbotu.cjsCardView.CardViewActivity;
+import com.shy.lunbotu.hook.HookActivity;
 import com.shy.lunbotu.load.SplashActivity;
 import com.shy.lunbotu.lunbotu.LunBoTuActivity;
 import com.shy.lunbotu.materialDesign.MaterialDesignActivity;
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         View viewById11 = findViewById(R.id.MusicPlayer);
         View viewById12 = findViewById(R.id.cardView);
         View viewById13 = findViewById(R.id.car);
+        View viewById14 = findViewById(R.id.hook);
 
         lbt.setOnClickListener(this);
         myview.setOnClickListener(this);
@@ -62,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         viewById11.setOnClickListener(this);
         viewById12.setOnClickListener(this);
         viewById13.setOnClickListener(this);
+        viewById14.setOnClickListener(this);
     }
 
     @Override
@@ -115,6 +118,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.car:
 //                startActivity(new Intent(MainActivity.this, CarActivity.class));
+                break;
+            case R.id.hook:
+                startActivity(new Intent(MainActivity.this, HookActivity.class));
                 break;
                 default:
         }
