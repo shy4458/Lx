@@ -89,32 +89,4 @@ public class myFermodeView extends View {
         canvas.drawCircle(width *2 /3,height/3,height/4,scrPaint);
         return bitmap;
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

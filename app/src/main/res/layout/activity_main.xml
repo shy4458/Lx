@@ -155,5 +155,55 @@
         app:layout_constraintStart_toStartOf="@+id/MusicPlayer"
         app:layout_constraintTop_toTopOf="@+id/car" />
 
+    <Button
+        android:id="@+id/okhttp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="okhttp"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/hook" />
+
+    <Button
+        android:id="@+id/service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Service"
+        app:layout_constraintStart_toStartOf="@+id/car"
+        app:layout_constraintTop_toBottomOf="@+id/car" />
+
+    <Button
+        android:id="@+id/contentProvider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Provider"
+        app:layout_constraintStart_toStartOf="@+id/hook"
+        app:layout_constraintTop_toTopOf="@+id/service" />
+
+    <Button
+        android:id="@+id/bigBitmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="加载大图片"
+        app:layout_constraintStart_toStartOf="@+id/okhttp"
+        app:layout_constraintTop_toTopOf="@+id/contentProvider" />
+
+    <Button
+        android:id="@+id/music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="music"
+        app:layout_constraintStart_toStartOf="@+id/service"
+        app:layout_constraintTop_toBottomOf="@+id/service" />
+
+    <Button
+        android:id="@+id/zhbjMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="智慧北京"
+        app:layout_constraintStart_toStartOf="@+id/contentProvider"
+        app:layout_constraintTop_toTopOf="@+id/music" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

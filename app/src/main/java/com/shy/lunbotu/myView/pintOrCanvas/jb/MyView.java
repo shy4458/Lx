@@ -60,12 +60,12 @@ public class MyView extends View {
 //        canvas.drawCircle(250,250,250,paint); //圆
         canvas.drawRect(0,0,500,500,paint); //矩形
 
-//        唤醒渐变 由里到外，
+//      环形渐变 由里到外，
         RadialGradient radialGradient = new RadialGradient(750, 250, 250, new int[]{Color.RED, Color.BLUE, Color.GREEN}, null, Shader.TileMode.CLAMP);
         paint.setShader(radialGradient);
         canvas.drawCircle(750,250,250,paint);
 
-        //
+        //旋转渐变
         SweepGradient sweepGradient = new SweepGradient(250, 750, Color.RED, Color.GREEN);
         paint.setShader(sweepGradient);
         canvas.drawCircle(250,750,250,paint);

@@ -1,17 +1,23 @@
 package com.shy.lunbotu;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.view.View;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.shy.lunbotu.bitmap.BigBitmapActivity;
 import com.shy.lunbotu.cjsCardView.CardViewActivity;
+import com.shy.lunbotu.contentProvider.ProviderActivity;
 import com.shy.lunbotu.hook.HookActivity;
+import com.shy.lunbotu.inter.OkHttpActivity;
 import com.shy.lunbotu.load.SplashActivity;
 import com.shy.lunbotu.lunbotu.LunBoTuActivity;
 import com.shy.lunbotu.materialDesign.MaterialDesignActivity;
-import com.shy.lunbotu.myView.carView.CarActivity;
+import com.shy.lunbotu.music.MusicActivity;
 import com.shy.lunbotu.myView.ggk.GgkActivity;
 import com.shy.lunbotu.myView.pintOrCanvas.jb.JbACtivity;
 import com.shy.lunbotu.myView.pintOrCanvas.lphz.LphzActivity;
@@ -23,12 +29,24 @@ import com.shy.lunbotu.pmsp.BfbspAvtivity;
 import com.shy.lunbotu.pmsp.DensityActivity;
 import com.shy.lunbotu.pmsp.LhpspActivity;
 import com.shy.lunbotu.pmsp.PmspActivity;
+import com.shy.lunbotu.service.BindingActivity;
+import com.shy.lunbotu.zhbj.ZhbjMainActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private Handler handler = new Handler() {
+        @Override
+        public void handleMessage(@NonNull Message msg) {
+            super.handleMessage(msg);
+
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
         setContentView(R.layout.activity_main);
         View lbt = findViewById(R.id.lbt);
         View myview = findViewById(R.id.myview);
@@ -47,6 +65,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         View viewById12 = findViewById(R.id.cardView);
         View viewById13 = findViewById(R.id.car);
         View viewById14 = findViewById(R.id.hook);
+        View viewById15 = findViewById(R.id.okhttp);
+        View viewById16 = findViewById(R.id.service);
+        View viewById17 = findViewById(R.id.contentProvider);
+        View viewById18 = findViewById(R.id.bigBitmap);
+        View viewById19 = findViewById(R.id.music);
+        View viewById20 = findViewById(R.id.zhbjMain);
+
 
         lbt.setOnClickListener(this);
         myview.setOnClickListener(this);
@@ -65,15 +90,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         viewById12.setOnClickListener(this);
         viewById13.setOnClickListener(this);
         viewById14.setOnClickListener(this);
+        viewById15.setOnClickListener(this);
+        viewById16.setOnClickListener(this);
+        viewById17.setOnClickListener(this);
+        viewById18.setOnClickListener(this);
+        viewById19.setOnClickListener(this);
+        viewById20.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.lbt :
+        switch (v.getId()) {
+            case R.id.lbt:
                 startActivity(new Intent(MainActivity.this, LunBoTuActivity.class));
                 break;
-            case R.id.myview :
+            case R.id.myview:
                 startActivity(new Intent(MainActivity.this, LphzActivity.class));
                 break;
 
@@ -122,7 +153,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.hook:
                 startActivity(new Intent(MainActivity.this, HookActivity.class));
                 break;
-                default:
+            case R.id.okhttp:
+                startActivity(new Intent(MainActivity.this, OkHttpActivity.class));
+                break;
+            case R.id.service:
+                startActivity(new Intent(MainActivity.this, BindingActivity.class));
+                break;
+            case R.id.contentProvider:
+                startActivity(new Intent(MainActivity.this, ProviderActivity.class));
+                break;
+
+            case R.id.bigBitmap:
+                startActivity(new Intent(MainActivity.this, BigBitmapActivity.class));
+                break;
+
+            case R.id.music:
+                startActivity(new Intent(MainActivity.this, MusicActivity.class));
+                break;
+
+            case R.id.zhbjMain:
+                startActivity(new Intent(MainActivity.this, ZhbjMainActivity.class));
+                break;
+
+            default:
         }
     }
 }
