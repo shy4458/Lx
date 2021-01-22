@@ -27,8 +27,8 @@ public class LhpspActivity extends AppCompatActivity {
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         //判断是否是刘海屏
-//        boolean hasDisplayCutout = hasDisplayCutout(window);
-//        if (hasDisplayCutout) {
+        boolean hasDisplayCutout = hasDisplayCutout(window);
+        if (hasDisplayCutout) {
             //2.允许内容延伸进刘海区
             WindowManager.LayoutParams params = window.getAttributes();
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
@@ -47,7 +47,7 @@ public class LhpspActivity extends AppCompatActivity {
             int visibility = window.getDecorView().getSystemUiVisibility();
             visibility |= flags;
             window.getDecorView().setSystemUiVisibility(visibility);
-//        }
+        }
 
         setContentView(R.layout.activity_lhpsp);
 

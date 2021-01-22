@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Android Money</string>
+
+    <string name="main_rb_sy">首页</string>
+    <string name="main_rb_xw">新闻</string>
+    <string name="main_rb_fw">服务</string>
+    <string name="main_rb_zw">政务</string>
+    <string name="main_rb_sz">设置</string>
+    <string name="splash_b_jrxd">进入向导</string>
+    <string name="splash_b_jrzcx">进入主程序</string>
+    <string name="username_error" />
+    <string name="password_error" />
+
 </resources>

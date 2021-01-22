@@ -9,6 +9,8 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.shy.lunbotu.mvp.ui.LoginActivity;
+import com.shy.lunbotu.surfaceView.RvSurfaceViewActivity;
 import com.shy.lunbotu.bitmap.BigBitmapActivity;
 import com.shy.lunbotu.cjsCardView.CardViewActivity;
 import com.shy.lunbotu.contentProvider.ProviderActivity;
@@ -30,7 +32,6 @@ import com.shy.lunbotu.pmsp.DensityActivity;
 import com.shy.lunbotu.pmsp.LhpspActivity;
 import com.shy.lunbotu.pmsp.PmspActivity;
 import com.shy.lunbotu.service.BindingActivity;
-import com.shy.lunbotu.zhbj.ZhbjMainActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -71,6 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         View viewById18 = findViewById(R.id.bigBitmap);
         View viewById19 = findViewById(R.id.music);
         View viewById20 = findViewById(R.id.zhbjMain);
+        View viewById21 = findViewById(R.id.GSYVideoPlayer);
 
 
         lbt.setOnClickListener(this);
@@ -96,6 +98,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         viewById18.setOnClickListener(this);
         viewById19.setOnClickListener(this);
         viewById20.setOnClickListener(this);
+        viewById21.setOnClickListener(this);
     }
 
     @Override
@@ -148,7 +151,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this, CardViewActivity.class));
                 break;
             case R.id.car:
-//                startActivity(new Intent(MainActivity.this, CarActivity.class));
+                startActivity(new Intent(MainActivity.this, RvSurfaceViewActivity.class));
                 break;
             case R.id.hook:
                 startActivity(new Intent(MainActivity.this, HookActivity.class));
@@ -172,7 +175,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.zhbjMain:
-                startActivity(new Intent(MainActivity.this, ZhbjMainActivity.class));
+                startActivity(new Intent(MainActivity.this, com.shy.lunbotu.zhbj.activity.SplashActivity.class));
+                break;
+            case R.id.GSYVideoPlayer:
+                startActivity(new Intent(MainActivity.this, LoginActivity.class));
                 break;
 
             default:

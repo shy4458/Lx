@@ -28,4 +28,8 @@
         <item>@color/yellow</item>
     </array>
 
+<!--    智慧北京-->
+
+    <color name="main_bg">#FFFFFF</color>
+
 </resources>

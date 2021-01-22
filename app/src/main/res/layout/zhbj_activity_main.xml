@@ -1,6 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
 
-</LinearLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/main_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp" />
+
+    <RadioGroup
+        android:id="@+id/main_rg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_rb_sy"
+            style="@style/main_rb_style"
+            android:drawableTop="@drawable/main_rb_sy_selector"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/main_rb_sy" />
+
+        <RadioButton
+            android:id="@+id/main_rb_xw"
+            style="@style/main_rb_style"
+            android:drawableTop="@drawable/main_rb_xw_selector"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/main_rb_xw" />
+
+        <RadioButton
+            android:id="@+id/main_rb_fw"
+            style="@style/main_rb_style"
+            android:drawableTop="@drawable/main_rb_fw_selector"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/main_rb_fw" />
+
+        <RadioButton
+            android:id="@+id/main_rb_zw"
+            style="@style/main_rb_style"
+            android:drawableTop="@drawable/main_rb_zw_selector"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/main_rb_zw" />
+
+
+    </RadioGroup>
+
+</RelativeLayout>
